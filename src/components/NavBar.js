@@ -6,28 +6,27 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 import { FaDiscord, FaTwitter, FaInstagram } from 'react-icons/fa'
 
-//import '../styles/NavBar.css'
+import '../styles/NavBar.css'
 
 function NavBar() {
     return (
         <Navbar
             style={{
                 height: '80px',
-                zIndex: '10000',
+                zIndex: '1',
                 paddingLeft: '20px',
                 paddingRight: '20px',
             }}
             collapseOnSelect
             expand="lg"
-            bg="snow"
-            variant="light"
+            variant="dark"
         >
             <Container fluid>
                 <Navbar.Brand href="/" className="px-3">
                     <img
-                        src="logo.png"
+                        src="/images/logo.png"
                         width="60"
-                        height="60"
+                        height="auto"
                         className="d-inline-block align-top"
                         alt="Northeastern Blockchain logo"
                     />

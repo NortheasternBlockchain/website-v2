@@ -13,10 +13,12 @@ import Governance from "./pages/Governance"
 import Team from "./pages/Team"
 import Events from "./pages/Events"
 
+import './App.css'
+
 function App() {
 
   return (
-    <Container>
+    <Container className="App">
       <NavBar></NavBar>
       <BrowserRouter>
         <Routes>

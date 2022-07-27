@@ -1,0 +1,8 @@
+#collasible-nav-dropdown::after{
+    display: none; 
+}
+
+.sm-icons {
+    right: 20px;
+    position: absolute;
+}

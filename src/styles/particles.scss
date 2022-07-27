@@ -4,17 +4,17 @@ $particle-size: 3px;
 $time: 8s; 
 $base-hue: 350; // change for diff colors (180 is nice)
 
-body {
-  background-color: #221f1f;
-  min-height: 80vh; // brings it top of center by 10vh (logo is adjusted same amount)
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  overflow: hidden;
-}
+// body {
+//   background-color: #221f1f;
+//   min-height: 80vh; // brings it top of center by 10vh (logo is adjusted same amount)
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+//   overflow: hidden;
+// }
 
 .logo {
   height: 100px;
