@@ -1,4 +1,4 @@
-import '../styles/particles.scss'
+import '../styles/particles.scss';
 
 const particles = () => {
     let cs = [];
@@ -6,17 +6,19 @@ const particles = () => {
         cs.push(<div className="c"></div>);
     }
     return cs;
-  }
+};
 
 function HomePageParticles() {
     return (
-        <div >
-            <img className="logo" src="/images/logo.png" alt='Northeastern Blockchain logo'></img>
-            <div className="wrap">
-                {particles()}
-            </div>
-      </div>
-    )
+        <div>
+            <img
+                className="logo"
+                src="/images/logo.png"
+                alt="Northeastern Blockchain logo"
+            ></img>
+            <div className="wrap">{particles()}</div>
+        </div>
+    );
 }
 
 export default HomePageParticles;

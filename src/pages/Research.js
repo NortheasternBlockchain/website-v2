@@ -1,8 +1,11 @@
+import { DefaultLayout } from '../layouts/DefaultLayout';
+
 function Research() {
     return (
-        <h1>Research</h1>
+        <DefaultLayout>
+            <h2>Events</h2>
+        </DefaultLayout>
     );
 }
-
 
 export default Research;

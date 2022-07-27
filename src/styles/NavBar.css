@@ -1,8 +1,19 @@
+/* removes the dropdown carrot from the navbar */
 #collasible-nav-dropdown::after{
     display: none; 
+ }
+
+/* 992 matche the 'lg' bootstrap breakpoint */
+@media only screen and (min-width: 992px) {
+    .sm-icons {
+        right: 20px;
+        position: absolute;
+    }
 }
 
-.sm-icons {
-    right: 20px;
-    position: absolute;
+@media only screen and (max-width: 992px) {
+    .sm-icons {
+        flex-direction: row !important;
+        padding-left: 0.5em !important;
+    }
 }

@@ -1,26 +1,16 @@
-import * as React from 'react'
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import * as React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import { FaDiscord, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { FaDiscord, FaTwitter, FaInstagram } from 'react-icons/fa';
 
-import '../styles/NavBar.css'
+import '../styles/NavBar.css';
 
 function NavBar() {
     return (
-        <Navbar
-            style={{
-                height: '80px',
-                zIndex: '1',
-                paddingLeft: '20px',
-                paddingRight: '20px',
-            }}
-            collapseOnSelect
-            expand="lg"
-            variant="dark"
-        >
+        <Navbar collapseOnSelect expand="lg" variant="dark">
             <Container fluid>
                 <Navbar.Brand href="/" className="px-3">
                     <img
@@ -34,38 +24,29 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav flex-grow-1 pe-3>
-                        <Nav.Link className="px-3 nav-item" href="#about">
+                        <Nav.Link className="px-3" href="/#about">
                             About
                         </Nav.Link>
                         <NavDropdown
-                            className="px-3 nav-item"
+                            className="px-3"
                             title="Initiatives"
                             id="collasible-nav-dropdown"
                         >
-                            <NavDropdown.Item
-                                className="nav-item"
-                                href="/research"
-                            >
+                            <NavDropdown.Item href="/research">
                                 Research
                             </NavDropdown.Item>
-                            <NavDropdown.Item
-                                className="nav-item"
-                                href="/governance"
-                            >
+                            <NavDropdown.Item href="/governance">
                                 Governance
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item
-                                className="nav-item"
-                                href="https://open.spotify.com/show/3PlymH5URCaCy8OqSBMOdN?si=c3fc6748eb6744b3"
-                            >
+                            <NavDropdown.Item href="https://open.spotify.com/show/3PlymH5URCaCy8OqSBMOdN?si=c3fc6748eb6744b3">
                                 Podcast
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link className="px-3 nav-item" href="/events">
+                        <Nav.Link className="px-3" href="/events">
                             Events
                         </Nav.Link>
-                        <Nav.Link className="px-3 nav-item" href="/team">
+                        <Nav.Link className="px-3" href="/team">
                             Team
                         </Nav.Link>
                     </Nav>
@@ -92,7 +73,7 @@ function NavBar() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    )
+    );
 }
 
-export default NavBar
+export default NavBar;

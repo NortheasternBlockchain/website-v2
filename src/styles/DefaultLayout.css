@@ -1,0 +1,8 @@
+.default-layout::-webkit-scrollbar {
+    display: none;
+}
+
+.default-layout {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

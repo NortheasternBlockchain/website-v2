@@ -1,6 +1,10 @@
+import { DefaultLayout } from '../layouts/DefaultLayout';
+
 function Events() {
     return (
-        <h1>Events</h1>
+        <DefaultLayout>
+            <h2>Events</h2>
+        </DefaultLayout>
     );
 }
 

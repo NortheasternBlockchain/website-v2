@@ -1,8 +1,11 @@
+import { DefaultLayout } from '../layouts/DefaultLayout';
+
 function Governance() {
     return (
-        <h1>Governance</h1>
+        <DefaultLayout>
+            <h2>Governance</h2>
+        </DefaultLayout>
     );
 }
-
 
 export default Governance;

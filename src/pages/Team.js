@@ -1,8 +1,11 @@
+import { DefaultLayout } from '../layouts/DefaultLayout';
+
 function Team() {
     return (
-        <h1>Team</h1>
+        <DefaultLayout>
+            <h2>Governance</h2>
+        </DefaultLayout>
     );
 }
-
 
 export default Team;
