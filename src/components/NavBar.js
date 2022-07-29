@@ -1,54 +1,60 @@
-import * as React from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'gatsby';
 
 import { FaDiscord, FaTwitter, FaInstagram } from 'react-icons/fa';
 
-import '../styles/NavBar.css';
+import logo from '../images/logo.png';
+
+import '../styles/NavBar.scss';
 
 function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" variant="dark">
             <Container fluid>
-                <Navbar.Brand href="/" className="px-3">
+                <Link className="px-3 navbar-brand" to="/">
                     <img
-                        src="/images/logo.png"
+                        src={logo}
                         width="60"
                         height="auto"
                         className="d-inline-block align-top"
                         alt="Northeastern Blockchain logo"
                     />
-                </Navbar.Brand>
+                </Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav flex-grow-1 pe-3>
-                        <Nav.Link className="px-3" href="/#about">
+                    <Nav flex-grow-1="true" pe-3="true">
+                        <Link className="px-3 nav-link" to="/#about">
                             About
-                        </Nav.Link>
+                        </Link>
                         <NavDropdown
                             className="px-3"
                             title="Initiatives"
                             id="collasible-nav-dropdown"
                         >
-                            <NavDropdown.Item href="/research">
+                            <Link className="dropdown-item" to="/research">
                                 Research
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="/governance">
+                            </Link>
+                            <Link className="dropdown-item" to="/governance">
                                 Governance
-                            </NavDropdown.Item>
+                            </Link>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://open.spotify.com/show/3PlymH5URCaCy8OqSBMOdN?si=c3fc6748eb6744b3">
+                            <Link
+                                className="dropdown-item"
+                                to="https://open.spotify.com/show/3PlymH5URCaCy8OqSBMOdN?si=c3fc6748eb6744b3"
+                            >
                                 Podcast
-                            </NavDropdown.Item>
+                            </Link>
                         </NavDropdown>
-                        <Nav.Link className="px-3" href="/events">
+                        <Link className="px-3 nav-link" to="/events">
                             Events
-                        </Nav.Link>
-                        <Nav.Link className="px-3" href="/team">
+                        </Link>
+                        <Link className="px-3 nav-link" to="/team">
                             Team
-                        </Nav.Link>
+                        </Link>
                     </Nav>
                     <Nav className="sm-icons">
                         <Nav.Link

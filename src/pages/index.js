@@ -1,19 +1,20 @@
+import React from 'react'; // required for Gatsby
 import Container from 'react-bootstrap/esm/Container';
 import HomePageParticles from '../components/HomePageParticles';
-import { DefaultLayout } from '../layouts/DefaultLayout';
+import { AppLayout } from '../layouts/AppLayout';
 
 function Home() {
     return (
-        <DefaultLayout>
+        <AppLayout>
             <Container fluid>
                 <section
                     style={{ minHeight: 'calc(100vh - 72.1625px)' }}
                 ></section>
                 <section id="about" style={{ minHeight: '100vh' }}>
-                    About
+                    <h3>About</h3>
                 </section>
             </Container>
-        </DefaultLayout>
+        </AppLayout>
     );
 }
 
