@@ -1,6 +1,6 @@
 # Northeastern Blockchain Website 2.0
 
-### `npm run develop`
+### `npm run dev`
 - Runs the development server for React with Gatsby
 - Hosted at [http://localhost:3000](http://localhost:3000) 
 
