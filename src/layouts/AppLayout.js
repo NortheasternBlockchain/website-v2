@@ -2,9 +2,9 @@ import React from 'react';
 import Stack from 'react-bootstrap/Stack';
 import NavBar from '../components/NavBar';
 
-import '../styles/DefaultLayout.css';
+import '../styles/AppLayout.scss';
 
-export const DefaultLayout = ({ children }) => {
+export const AppLayout = ({ children }) => {
     return (
         <Stack
             className="default-layout"

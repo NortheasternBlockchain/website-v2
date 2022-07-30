@@ -1,10 +1,11 @@
-import { DefaultLayout } from '../layouts/DefaultLayout';
+import React from 'react'; // required for Gatsby
+import { AppLayout } from '../layouts/AppLayout';
 
 function Events() {
     return (
-        <DefaultLayout>
+        <AppLayout>
             <h2>Events</h2>
-        </DefaultLayout>
+        </AppLayout>
     );
 }
 

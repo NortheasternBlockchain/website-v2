@@ -1,12 +1,12 @@
 import React from 'react'; // required for Gatsby
 import { AppLayout } from '../layouts/AppLayout';
 
-function Team() {
+function Home() {
     return (
         <AppLayout>
-            <h2>Team</h2>
+            <h2>404 - page not found</h2>
         </AppLayout>
     );
 }
 
-export default Team;
+export default Home;
