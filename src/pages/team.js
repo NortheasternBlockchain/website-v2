@@ -5,6 +5,7 @@ function Team() {
     return (
         <AppLayout>
             <h2>Team</h2>
+            <h2>Test</h2>
         </AppLayout>
     );
 }
