@@ -1,12 +1,21 @@
-/* removes the dropdown carrot from the navbar */
-#collasible-nav-dropdown::after{
-    display: none; 
- }
+$section-bg: #2c1e1e;
 
-/* 992 matche the 'lg' bootstrap breakpoint */
+.nav-section {
+    background-color: $section-bg;
+    border-radius: 15px;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+}
+
+/* removes the dropdown carrot from the navbar */
+#collasible-nav-dropdown::after {
+    display: none;
+}
+
+/* 992 matches the 'lg' bootstrap breakpoint */
 @media only screen and (min-width: 992px) {
     .sm-icons {
-        right: 20px;
+        right: 2em;
         position: absolute;
     }
 }

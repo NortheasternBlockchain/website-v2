@@ -16,13 +16,28 @@ $base-hue: 350; // change for diff colors (180 is nice)
 //   overflow: hidden;
 // }
 
+.home-page {
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .logo {
     height: 100px;
     width: auto;
 }
 
 .wrap {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 0;

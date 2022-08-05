@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import logo from '../images/logo.png';
-
-import '../styles/particles.scss';
+import '../styles/particles2.scss';
 
 const particles = () => {
     let cs = [];
@@ -14,12 +12,7 @@ const particles = () => {
 
 function HomePageParticles({ onAnimationEnd }) {
     return (
-        <div onAnimationEnd={() => onAnimationEnd()}>
-            <img
-                className="logo"
-                src={logo}
-                alt="Northeastern Blockchain logo"
-            ></img>
+        <div>
             <div className="wrap">{particles()}</div>
         </div>
     );

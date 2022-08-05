@@ -1,0 +1,54 @@
+$particle-size: 3px;
+$time: 400s;
+$base-hue: 350;
+$total: 130;
+$orb-size: 200px;
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    animation: rotate $time infinite linear;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+}
+
+.c {
+    position: absolute;
+    width: $particle-size;
+    height: $particle-size;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+@for $i from 1 through $total {
+    $scale: random(5);
+    $y: (random(360) * 1deg * $scale);
+    $z: (random(360) * 1deg * $scale);
+    $posx: (random(100) * 1%);
+    $posy: (random(100) * 1%);
+
+    $hue: ((20 / $total * $i) + $base-hue);
+
+    .c:nth-child(#{$i}) {
+        animation: orbit#{$i} $time forwards linear;
+        background-color: hsla($hue, 100%, 50%, 1);
+        top: $posy;
+        left: $posx;
+    }
+
+    @keyframes orbit#{$i} {
+        5% {
+            opacity: 1; // fade in
+        }
+        100% {
+            transform: rotateZ(-$z) rotateY($y) translateX(($orb-size * $scale))
+                rotateZ($z);
+        }
+    }
+}

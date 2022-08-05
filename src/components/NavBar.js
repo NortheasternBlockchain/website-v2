@@ -14,7 +14,7 @@ import '../styles/NavBar.scss';
 function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" variant="dark">
-            <Container fluid>
+            <Container className="nav-section" fluid>
                 <Link className="px-3 navbar-brand" to="/">
                     <img
                         src={logo}

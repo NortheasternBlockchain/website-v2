@@ -1,7 +1,21 @@
-$body-bg: #121010;
+$body-bg: #2c1e1e;
 $body-color: white;
 
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+body {
+    overflow: hidden;
+    font-family: 'Jura', sans-serif;
+}
+
+h1 {
+    font-size: calc(2.375rem + 1.5vw);
+}
+
+h4 {
+    font-size: calc(1.375rem + 0.5vw);
+}
 
 .default-layout::-webkit-scrollbar {
     display: none;
@@ -14,4 +28,18 @@ $body-color: white;
 
 .web-content {
     scroll-behavior: smooth;
+}
+
+section:nth-child(odd) {
+    // black sections
+    border-radius: 15px;
+    background-color: #121010;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-top: 2em;
+}
+
+section:nth-child(even) {
+    // red sections
+    margin-top: 2em;
 }
