@@ -6,7 +6,8 @@
     flex-direction: row;
 }
 
-.box {
 
-    margin: 20px;
+.grid > div {
+
+    flex-basis: 33%;
 }
