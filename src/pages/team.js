@@ -146,32 +146,34 @@ function checkID(thisId, targetId) {
     return thisId < targetId;
 }
 
+
 function Team() {
     return (
+        <section>
         <AppLayout>
             <h2>Team</h2>
             <Container>
                 <Row>
                 {cardInfo.slice(0,2).map(renderCard)} 
                 {cardInfo.slice(2,4).map(renderCard)}
-                </Row>
-                <Row>
+               
                 {cardInfo.slice(4,6).map(renderCard)}
                 {cardInfo.slice(6,8).map(renderCard)}
-                </Row>
-                <Row>
+                
                 {cardInfo.slice(8,10).map(renderCard)}
                 {cardInfo.slice(10,12).map(renderCard)}
-                </Row>
-                <Row>
+                
                 {cardInfo.slice(12,13).map(renderCard)}
                 </Row>
                 </Container>
         </AppLayout>
+        </section>
     );
 }
 
+
 export default Team;
+
 
 
 /*
