@@ -128,16 +128,18 @@ const cardInfo = [
 const renderCard = (card, index) => {
 
     return(
-        <Card style={{ width: '18rem' }} text="dark" key={index} class="box">
-      <Card.Img variant="top" src= {card.image} />
+        
+        <Card border="danger" style={{ width: '18rem' }} text="dark" key={index} class="box">
+      <Card.Img variant="top" src= {card.image} class="cardimg" />
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
         <Card.Text>
           {card.description}
         </Card.Text>
-        <Button href={card.link} variant="primary">Social</Button>
+        <Button href={card.link} variant="danger">Social</Button>
       </Card.Body>
     </Card>
+
     )
 }
 
@@ -152,8 +154,12 @@ function Team() {
         <section>
         <AppLayout>
             <h2>Team</h2>
+            <div class="circle-wrapper">
+    <div class="success rectangle"></div>
+  </div>
             <Container>
                 <Row>
+                
                 {cardInfo.slice(0,2).map(renderCard)} 
                 {cardInfo.slice(2,4).map(renderCard)}
                
