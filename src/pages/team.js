@@ -141,16 +141,30 @@ const renderCard = (card, index) => {
     )
 }
 
+function checkID(thisId, targetId) {
+
+    return thisId < targetId;
+}
+
 function Team() {
     return (
         <AppLayout>
             <h2>Team</h2>
             <Container>
                 <Row>
-                    <Col md={3} sm={6} xs={6}>1st</Col>
-                    <Col md={3} sm={6} xs={6}>2nd</Col>
-                    <Col md={3} sm={6} xs={6}>3rd</Col>
-                    <Col md={3}s sm={6} xs={6}>4th</Col>
+                {cardInfo.slice(0,2).map(renderCard)} 
+                {cardInfo.slice(2,4).map(renderCard)}
+                </Row>
+                <Row>
+                {cardInfo.slice(4,6).map(renderCard)}
+                {cardInfo.slice(6,8).map(renderCard)}
+                </Row>
+                <Row>
+                {cardInfo.slice(8,10).map(renderCard)}
+                {cardInfo.slice(10,12).map(renderCard)}
+                </Row>
+                <Row>
+                {cardInfo.slice(12,13).map(renderCard)}
                 </Row>
                 </Container>
         </AppLayout>
