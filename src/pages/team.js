@@ -143,11 +143,12 @@ const renderCard = (card, index) => {
     )
 }
 
+/*
 function checkID(thisId, targetId) {
 
     return thisId < targetId;
 }
-
+*/
 
 function Team() {
     return (
@@ -160,16 +161,23 @@ function Team() {
             <Container>
                 <Row>
                 
+                <Col >
                 {cardInfo.slice(0,2).map(renderCard)} 
                 {cardInfo.slice(2,4).map(renderCard)}
+                </Col>
                
+               <Col>
                 {cardInfo.slice(4,6).map(renderCard)}
                 {cardInfo.slice(6,8).map(renderCard)}
+                </Col>
                 
+
+                <Col>
                 {cardInfo.slice(8,10).map(renderCard)}
                 {cardInfo.slice(10,12).map(renderCard)}
                 
                 {cardInfo.slice(12,13).map(renderCard)}
+                </Col>
                 </Row>
                 </Container>
         </AppLayout>
