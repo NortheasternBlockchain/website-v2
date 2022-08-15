@@ -48,7 +48,7 @@ const cardInfo = [
     id: 3,
   },
   {
-    description: "",
+    description: "[Insert]",
     title: "Jeremy Koch (Co Vice President)",
     image: Jeremy,
     link: "https://www.linkedin.com/in/jeremy-kochnu/",
@@ -79,7 +79,7 @@ const cardInfo = [
     id: 7,
   },
   {
-    description: "",
+    description: "[Insert]",
     title: "Nishay Madhani (Director of Technology)",
     image: Nishay,
     link: "https://nshmadhani.com",
@@ -94,14 +94,14 @@ const cardInfo = [
     id: 9,
   },
   {
-    description: "",
+    description: "[Insert]",
     title: "Bernice Luong (Director of Marketing)",
     image: Bernice,
     link: "https://www.linkedin.com/in/bernice-luong/",
     id: 10,
   },
   {
-    description: "",
+    description: "[Insert]",
     title: "Megan Gilbert (Head of Social Media)",
     image: Megan,
     link: "https://www.linkedin.com/in/megan--gilbert/",
@@ -116,7 +116,7 @@ const cardInfo = [
     id: 12,
   },
   {
-    description: "",
+    description: "[Insert]",
     title: "Luke O'Neill (Director of Operations)",
     image: Luke,
     link: "https://www.linkedin.com/in/lukefoneill",
@@ -129,7 +129,7 @@ const renderCard = (card, index) => {
 
     return(
         
-        <Card border="danger" style={{ width: '18rem' }} text="dark" key={index} class="box">
+        <Card border="danger" style={{ width: '20rem' }} text="dark" key={index} class="box">
       <Card.Img variant="top" src= {card.image} class="cardimg" />
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
