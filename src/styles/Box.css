@@ -17,38 +17,6 @@
     margin: 3%;
 }
 
-
-.circle-wrap {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin: 10px;
-  }
-  .success {
-    background-color: red;
-    border: 2.5px dashed red;
-  }
-
-  .rectangle {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 1px;
-    background-clip: content-box;
-    animation: spin 20s linear infinite;
-  }
-
-  .circle-wrap:active .circle {
-    animation: spin 10s linear infinite;
-  }
-
-@keyframes spin { 
-    100% { 
-      transform: translateX(100px);
-    }
-  }
-
   .card {
 
     margin: 3%;
